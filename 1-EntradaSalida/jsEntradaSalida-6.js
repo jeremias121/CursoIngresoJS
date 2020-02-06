@@ -7,10 +7,13 @@ function sumar()
     var valor2;
     var resultado;
 
+        // parseInt convierte un string en un valor
         valor1=parseInt(document.getElementById("numeroUno").value);
         valor2=parseInt(document.getElementById("numeroDos").value);
         resultado=valor1 + valor2;
 
+            /*genero una alerta donde se presenta un string
+            y una variable*/
             alert("la suma es: "+ resultado);
 
 }

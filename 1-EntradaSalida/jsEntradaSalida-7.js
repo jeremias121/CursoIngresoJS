@@ -4,9 +4,9 @@ mostrar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
 {	
-    var valor1 
-    var valor2
-    var resultado
+    var valor1;
+    var valor2;
+    var resultado;
 
         valor1=parseInt(document.getElementById("numeroUno").value);
         valor2=parseInt(document.getElementById("numeroDos").value);
@@ -17,9 +17,9 @@ function sumar()
 
 function restar()
 {
-    var valor1 
-    var valor2
-    var resultado
+    var valor1;
+    var valor2;
+    var resultado;
 
         valor1=parseInt(document.getElementById("numeroUno").value);
         valor2=parseInt(document.getElementById("numeroDos").value);
@@ -30,9 +30,9 @@ function restar()
 
 function multiplicar()
 { 
-    var valor1 
-    var valor2
-    var resultado
+    var valor1;
+    var valor2;
+    var resultado;
 
         valor1=parseInt(document.getElementById("numeroUno").value);
         valor2=parseInt(document.getElementById("numeroDos").value);
@@ -43,14 +43,14 @@ function multiplicar()
 
 function dividir()
 {
-    var valor1 
-    var valor2
-    var resultado
+    var valor1;
+    var valor2;
+    var resultado;
 
         valor1=parseInt(document.getElementById("numeroUno").value);
         valor2=parseInt(document.getElementById("numeroDos").value);
         resultado=valor1 / valor2;
 
-            alert("el resultado es: "+ resultado);
+        alert("el resultado es: "+ resultado);
 }
 

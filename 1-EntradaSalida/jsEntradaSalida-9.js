@@ -5,11 +5,10 @@ en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 {
     var numero;
-    var porsentaje;
+    var resultado;
 
         numero=parseInt(document.getElementById("sueldo").value);
-        porsentaje= numero + numero*0.1;
+        resultado = numero + numero*0.1;
         document.getElementById("resultado").value = porsentaje;
         
-	
 }

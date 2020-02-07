@@ -10,7 +10,8 @@ function mostrarAumento()
         numero=parseInt(document.getElementById("sueldo").value);
         resultado = numero + numero*0.1;
         /*tambien se puede escribir:
-        resultado= mumero - numero*10/100;*/
+        resultado= mumero - numero*10/100;
+        resulttado= numero- numero*.1;*/
 
         document.getElementById("resultado").value = porsentaje;
         

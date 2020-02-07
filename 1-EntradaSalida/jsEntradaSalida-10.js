@@ -9,5 +9,8 @@ function mostrarAumento()
 
         numero=parseInt(document.getElementById("importe").value);
         resultado= numero - numero*25/100;
+        /*tambien se puede escribir:
+        resultado= mumero - numero*0.25;*/
+
         document.getElementById("resultado").value = resultado;
 }

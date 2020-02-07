@@ -7,7 +7,9 @@ var valor1;
 var valor2;
 var resultado;
 /*si la variable esta fuera de la funcion se 
-denominan variables globales y abarcan todas las funciones*/
+denominan variables globales y abarcan todas las funciones
+y si esta dentro de la funcion es una variable local y
+solo se aplica a esa funcion*/
 
 function sumar()
 {	

@@ -7,13 +7,18 @@ function mostrar()
 	var numero;
 
 	iterador=prompt("Cuantas veses quieres intetnar?");
-	numero=prompt("Ingrese un numero")
+	
 
-	while(isNaN(numero) && contador<iterador){
+	while(contador<iterador){
 		contador+=1;
 		numero=parseInt(prompt("Ingrese otro numero"));
-		acumulador+= numero;
+		acumulador += numero;
 	}
+	while (isNaN(numero)){
+		numero=parseInt(prompt("Ingrese otro numero"));
+		
+	}
+
 document.getElementById('suma').value=acumulador;
 document.getElementById('promedio').value=acumulador/contador;
 

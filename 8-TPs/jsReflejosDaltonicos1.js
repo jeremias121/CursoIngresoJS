@@ -9,12 +9,43 @@ var tiempoInicio;
 function comenzar()
 {
 
-	
+    var random;
+    var min=1;
+    var max=7;
+    var tiempoinicio=0;
+    
+    random= Math.floor(Math.random()* (max-min))+min;
 
+    switch(random){
+        case "1":
+        ColorSecreto= "azul"
+        break;
+        case "2":
+        ColorSecreto= "amarillo"
+        break;
+        case "3":
+        ColorSecreto= "marron"
+        break;
+        case "4":
+        ColorSecreto= "verde"
+        break;
+        case "5":
+        ColorSecreto= "celeste"
+        break;
+        case "6":
+        ColorSecreto= "rojo"
+        break;
+
+    }
+    document.getElementById("ColorElegido").value= ColorSecreto
 }//FIN DE LA FUNCIÓN
 function Responder(colorParametro)
 {
-	
+    var tiempofinal;
+    var tiempototal;
+
+    tiempofinal= new date;
+    tiempototal=tiempoInicio+
 	
 
 

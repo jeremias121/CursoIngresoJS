@@ -6,8 +6,39 @@ b.	Se pedirán un número positivo y se mostrará la cantidad de números pares 
 c.	Se pedirán un número positivo y se mostrará la cantidad de números divisibles de este número que se encuentran desde el 1 al 100.
 d.	Se pedirán un número positivo y se mostrará si el número es un número primo o no.
 e.	Se pedirán un número positivo y se mostrará la cantidad de números Primos desde el número ingresado hasta el cero.
-*/
-function ComenzarIngreso () 
+*/ 
+ var numero;
+ var resto;
+ var listanumeros;
+
+    numero=document.getElementById("numero").value;
+    resto=numero%2
+
+function NumerosPares()
 {
- 	
+if(resto==0){
+    while(numero<2){
+        
+    }
+}
+}
+function NumerosImpares()
+{
+
+
+}
+function NumerosDivisibles()
+{
+
+
+}
+function VerificarPrimos()
+{
+
+
+}
+function NumerosPrimos()
+{
+
+
 }

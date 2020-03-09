@@ -7,10 +7,13 @@ function mostrar()
     var notaBaja;
     var sexoNotaBaja;
     var varonesAprobados=0;
-    var contador =0
+    var respuesta;
+    var primeraVez=true;
+    var cantidadNotas=0;
+
+    respuesta=confirm("deseas empezar?");
     
-    while (contador<5) {
-        contador++;
+    while (respuesta) {
     
         do{
         nota=prompt("Ingrese la nota: ");
@@ -20,12 +23,13 @@ function mostrar()
         do{
             sexo=prompt("Ingrese el genero: ");
     
-        }while (sexo != "f" && sexo!= "m");
+        }while (!isNaN(sexo) || sexo != "f" && sexo!= "m");
     
         acumuladorNotas+= nota;
     
-        if(contador==1){
-   
+        if(primeraVez){
+            
+            primeraVez=false;
             notaBaja=nota;
    
         }else {
@@ -37,15 +41,22 @@ function mostrar()
             sexoNotaBaja=sexo;
    
         }
-    }
+        }   
    
-    if (nota>=6 && sexo=="m")
+        if (nota>=6 && sexo=="m"){
    
-     varonesAprobados++;
-
+    
+            varonesAprobados++;
+    
+        }
+        
+        cantidadNotas++;
+    
+    respuesta=confirm("Desea continuar?");
+    
     }
-
-    promedio= acumuladorNotas/contador;
+    
+    promedio= acumuladorNotas/cantidadNotas;
 
     alert("Promedio de las notas: "+ promedio);
     alert("La nota mas baja es: "+ notaBaja+ " y es pertenece al sexo: "+ sexoNotaBaja);
